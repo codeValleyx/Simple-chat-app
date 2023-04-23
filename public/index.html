@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat app</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/client.js"></script>
+</head>
+<body>
+    <div class="connect">
+        <button id="chooseSignUp">Sign up</button>
+        <button id="chooseSignIn">Sign in</button>
+    </div>
+    <div id="signUpDetails">
+        <input type="text" id="setUsername" placeholder="Set username">
+        <input type="text" id="setPassword" placeholder="Set password">
+        <button id="set">Sign Up</button>
+    </div>
+    <div id="signInDetails">
+        <input type="text" id="username" placeholder="Enter username">
+        <input type="text" id="password" placeholder="Enter passworrd">
+        <button id="check">Sign In</button>
+    </div>
+    <div id="display">
+        <p id="currentUser"></p>
+        <select id="users"></select>
+        <textarea name="" cols="40" rows="5" id="msg"></textarea>
+        <button id="sendMsg">Send</button>
+        <ul id="msgBox"></ul>
+    </div>
+</body>
+</html>
